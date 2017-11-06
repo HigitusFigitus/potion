@@ -43,7 +43,7 @@ Authorization header must be set to `admin`: \
 
 
 ## Tests
-To run the tests, `python tests.py` \
+To run the tests, `python tests.py`
 
 To get a coverage report, `coverage run --source=. tests.py` and then `coverage report`
 ```
