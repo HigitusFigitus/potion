@@ -48,14 +48,13 @@ Authorization header must be set to `admin`: \
 ## Tests
 To run the tests: `python tests.py`
 
-To get a coverage report: `coverage run --source=. tests.py` and then `coverage report`
+To get a coverage report: `coverage run --source=. --omit=tests.py tests.py` and then `coverage report`
 ```
 Name             Stmts   Miss  Cover
 ------------------------------------
 app.py              52      2    96%
 seed.py              8      8     0%
-tests.py           151      0   100%
 validations.py      33      0   100%
 ------------------------------------
-TOTAL              244     10    96%
+TOTAL               93     10    89%
 ```
