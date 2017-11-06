@@ -8,9 +8,10 @@
 - [Usage](#usage)
 - [Tests](#tests)
 
+
 ## Install
 + Clone this repository `git clone https://github.com/HigitusFigitus/potion.git`
-+ Move into the repo directory
++ `cd` into the repo directory
 + Build the Docker image `docker build -t potion:1.0 .`
 + Verify that the image built correctly `docker images`
 + Start the container `docker run -p 5000:5000 -d potion:1.0`
@@ -20,25 +21,26 @@
 + Exit the interactive shell `exit`
 + Access the API by navigating to `http://0.0.0.0:5000/api/v1/potions`
 
-## Usage
-Every potion has a potion name, which is a string and must be between 4 and 64 characters long, and globally unique. Also, potion names can only contain alphanumeric ascii characters, underscores, and dashes, and cannot start with an underscore or dash. \
-Every potion has a potion type, which is a string and must be either `active` or `passive`. \
-Every potion has a potion class, which is a string and depends on its potion type. For potions of type `passive` it can be `life` or `mana`. For potions of type `active` it can be `fire` or `poison`.
 
-Users can retrieve the whole list of potions: \
+## Usage
+Every potion has a potion name, which is a string. It must be between 4 and 64 characters long, and globally unique. Also, potion names can only contain alphanumeric ascii characters, underscores, and dashes, and cannot start with an underscore or dash. \
+Every potion has a potion type, which is a string and must be either `active` or `passive`. \
+Every potion has a potion class, which is a string and depends on its potion type. For potions of type `passive`, it can be `life` or `mana`. For potions of type `active`, it can be `fire` or `poison`. \
+A potion cannot be deleted. Also its name, type, and class cannot be modified.
+
++ Retrieve the whole list of potions: \
 `http://0.0.0.0:5000/api/v1/potions`
 
-Users can retrieve a single potion by name: \
++ Retrieve a single potion by name: \
 `http://0.0.0.0:5000/api/v1/potions/light_mana_potion`
 
-Users can filter potions by specifying a potion_class or a potion_type: \
++ Filter potions by specifying a potion_class or a potion_type: \
 ``
 
-Authorized users can create potions. To do so, they must supply the potion name, potion type, and potion class. \
++ Authorized users can create potions. To do so, they must supply the potion name, potion type, and potion class. \
 Authorization header must be set to `admin`. \
 ``
 
-A potion cannot be deleted. Also its name, type, and class cannot be modified.
 
 ## Tests
 To run the tests, `python tests.py` \
