@@ -63,7 +63,7 @@ def potions():
             potions = Potion.query.all()
 
             json_potions = json.dumps([p.toJSON() for p in potions])
-            return json_potions, 200
+        return json_potions, 200
 
 
 @app.route("/api/v1/potions/<potion_name>", methods=["GET"])
