@@ -41,7 +41,7 @@ Authorization header must be set to `admin`. \
 A potion cannot be deleted. Also its name, type, and class cannot be modified.
 
 ## Tests
-To run the tests, move into the repo directory and run `python tests.py` \
+To run the tests, `python tests.py` \
 Coverage report:
 ```
 Name             Stmts   Miss  Cover
@@ -53,6 +53,3 @@ validations.py      33      0   100%
 ------------------------------------
 TOTAL              244     10    96%
 ```
-
-
-
