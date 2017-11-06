@@ -29,10 +29,10 @@ Every potion has a potion class, which is a string and depends on its potion typ
 A potion cannot be deleted. Also its name, type, and class cannot be modified.
 
 + Retrieve the whole list of potions: \
-`http://0.0.0.0:5000/api/v1/potions`
+`curl http://0.0.0.0:5000/api/v1/potions`
 
 + Retrieve a single potion by name: \
-`http://0.0.0.0:5000/api/v1/potions/light_mana_potion`
+`curl http://0.0.0.0:5000/api/v1/potions/light_mana_potion`
 
 + Filter potions by specifying a potion class or a potion type: \
 ``
