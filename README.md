@@ -38,11 +38,11 @@ A potion cannot be deleted. Also its name, type, and class cannot be modified.
 `curl http://0.0.0.0:5000/api/v1/potions/light_mana_potion`
 
 + Filter potions by specifying a potion class or a potion type: \
-``
+`curl http://0.0.0.0:5000/api/v1/potions?potion_class=fire`
 
 + Authorized users can create potions. To do so, they must supply the potion name, potion type, and potion class. \
 Authorization header must be set to `admin`: \
-``
+`curl -X POST -H "Authorization:admin" -d '{"potion_name":"python", "potion_type":"active", "potion_class":"poison"}' http://0.0.0.0:5000/api/v1/potions`
 
 
 ## Tests
