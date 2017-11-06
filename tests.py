@@ -137,7 +137,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 400)
         data = json.loads(response.data)
         self.assertEqual(data["error"],
-                         "potion_name cannot start with an underscore or dash")
+                         "potion_name cannot start with underscore or dash")
 
     def test_post_potion_name_length(self):
         params = json.dumps(dict(potion_name="pot",

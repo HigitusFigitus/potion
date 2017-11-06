@@ -62,7 +62,7 @@ def potions():
         else:
             potions = Potion.query.all()
 
-            json_potions = json.dumps([p.toJSON() for p in potions])
+        json_potions = json.dumps([p.toJSON() for p in potions])
         return json_potions, 200
 
 

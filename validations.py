@@ -7,14 +7,14 @@ def validate_potion_name(potion_name):
     raise InvalidPotionError("potion_name can't be empty")
   elif potion_name[0] in ("_", "-"):
     raise InvalidPotionError(
-      "potion_name cannot start with an underscore or dash")
+      "potion_name cannot start with underscore or dash")
   elif len(potion_name) not in range(4, 65):
     raise InvalidPotionError(
-      "potion_name must be between 4 and 64 characters long")
+      "potion_name must be between 4 and 64 characters")
   elif re.match("^[A-Za-z0-9_\-]*$", potion_name) == None:
     raise InvalidPotionError(
       "potion_name can only contain alphanumeric ascii characters, " +
-      "underscores, and dashes")
+      "underscores, or dashes")
   elif Potion.query.filter_by(potion_name=potion_name).first() is not None:
     raise InvalidPotionError("potion_name must be unique")
 
