@@ -1,0 +1,63 @@
+- potion_name: minor_healing_potion
+  potion_type: passive
+  potion_class: life
+
+- potion_name: light_healing_potion
+  potion_type: passive
+  potion_class: life
+
+- potion_name: healing_potion
+  potion_type: passive
+  potion_class: life
+
+- potion_name: greater_healing_potion
+  potion_type: passive
+  potion_class: life
+
+- potion_name: super_healing_potion
+  potion_type: passive
+  potion_class: life
+
+- potion_name: minor_mana_potion
+  potion_type: passive
+  potion_class: mana
+
+- potion_name: light_mana_potion
+  potion_type: passive
+  potion_class: mana
+
+- potion_name: mana_potion
+  potion_type: passive
+  potion_class: mana
+
+- potion_name: greater_mana_potion
+  potion_type: passive
+  potion_class: mana
+
+- potion_name: super_mana_potion
+  potion_type: passive
+  potion_class: mana
+
+- potion_name: fulminating_potion
+  potion_type: active
+  potion_class: fire
+
+- potion_name: exploding_potion
+  potion_type: active
+  potion_class: fire
+
+- potion_name: oil_potion
+  potion_type: active
+  potion_class: fire
+
+- potion_name: strangling_gas_potion
+  potion_type: active
+  potion_class: poison
+
+- potion_name: chocking_gas_potion
+  potion_type: active
+  potion_class: poison
+
+- potion_name: rancid_gas_potion
+  potion_type: active
+  potion_class: poison
