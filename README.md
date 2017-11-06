@@ -26,23 +26,23 @@ The API exposes a “potions inventory” loosely based on Diablo II’s potions
 
 
 ## Usage
-Every potion has a potion name, which is a string. It must be between 4 and 64 characters long, and globally unique. Also, potion names can only contain alphanumeric ascii characters, underscores, and dashes, and cannot start with an underscore or dash. \
-Every potion has a potion type, which is a string and must be either `active` or `passive`. \
-Every potion has a potion class, which is a string and depends on its potion type. For potions of type `passive`, the potion type can be `life` or `mana`. For potions of type `active`, it can be `fire` or `poison`. \
-A potion cannot be deleted. Also its name, type, and class cannot be modified.
++ Every potion has a potion name, which is a string. It must be between 4 and 64 characters long, and globally unique. Also, potion names can only contain alphanumeric ascii characters, underscores, and dashes, and cannot start with an underscore or dash. \
++ Every potion has a potion type, which is a string and must be either `active` or `passive`. \
++ Every potion has a potion class, which is a string and depends on its potion type. For potions of type `passive`, the potion type can be `life` or `mana`. For potions of type `active`, it can be `fire` or `poison`. \
++ A potion cannot be deleted. Also its name, type, and class cannot be modified.
 
-+ Retrieve the whole list of potions: \
-`curl http://0.0.0.0:5000/api/v1/potions`
+  + Retrieve the whole list of potions: \
+  `curl http://0.0.0.0:5000/api/v1/potions`
 
-+ Retrieve a single potion by name: \
-`curl http://0.0.0.0:5000/api/v1/potions/light_mana_potion`
+  + Retrieve a single potion by name: \
+  `curl http://0.0.0.0:5000/api/v1/potions/light_mana_potion`
 
-+ Filter potions by specifying a potion class or a potion type: \
-`curl http://0.0.0.0:5000/api/v1/potions?potion_class=fire`
+  + Filter potions by specifying a potion class or a potion type: \
+  `curl http://0.0.0.0:5000/api/v1/potions?potion_class=fire`
 
-+ Authorized users can create potions. To do so, they must supply the potion name, potion type, and potion class. \
-Authorization header must be set to `admin`: \
-`curl -X POST -H "Authorization:admin" -d '{"potion_name":"python", "potion_type":"active", "potion_class":"poison"}' http://0.0.0.0:5000/api/v1/potions`
+  + Authorized users can create potions. To do so, they must supply the potion name, potion type, and potion class. \
+  Authorization header must be set to `admin`: \
+  `curl -X POST -H "Authorization:admin" -d '{"potion_name":"python", "potion_type":"active", "potion_class":"poison"}' http://0.0.0.0:5000/api/v1/potions`
 
 
 ## Tests
