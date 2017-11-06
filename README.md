@@ -25,7 +25,7 @@
 ## Usage
 Every potion has a potion name, which is a string. It must be between 4 and 64 characters long, and globally unique. Also, potion names can only contain alphanumeric ascii characters, underscores, and dashes, and cannot start with an underscore or dash. \
 Every potion has a potion type, which is a string and must be either `active` or `passive`. \
-Every potion has a potion class, which is a string and depends on its potion type. For potions of type `passive`, it can be `life` or `mana`. For potions of type `active`, it can be `fire` or `poison`. \
+Every potion has a potion class, which is a string and depends on its potion type. For potions of type `passive`, the potion type can be `life` or `mana`. For potions of type `active`, it can be `fire` or `poison`. \
 A potion cannot be deleted. Also its name, type, and class cannot be modified.
 
 + Retrieve the whole list of potions: \
@@ -34,11 +34,11 @@ A potion cannot be deleted. Also its name, type, and class cannot be modified.
 + Retrieve a single potion by name: \
 `http://0.0.0.0:5000/api/v1/potions/light_mana_potion`
 
-+ Filter potions by specifying a potion_class or a potion_type: \
++ Filter potions by specifying a potion class or a potion type: \
 ``
 
 + Authorized users can create potions. To do so, they must supply the potion name, potion type, and potion class. \
-Authorization header must be set to `admin`. \
+Authorization header must be set to `admin`: \
 ``
 
 
