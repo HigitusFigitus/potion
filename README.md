@@ -2,7 +2,7 @@
 
 > Potion is a custom RESTful API built with Flask.
 
-The API exposes a “potions inventory” loosely based on Diablo II’s potions system. The potions stored in the inventory either recover a portion of life or mana, or deal damage to an enemy. There are four classes of potions: life, mana, fire, and poison.
+The API exposes a “potions inventory” loosely based on Diablo II’s potions system. Based on their type, the potions stored in the inventory regenerate a character's status meters or deal damage to an enemy. There are four classes of potions: life, mana, fire, and poison.
 
 
 ## Table of Contents
