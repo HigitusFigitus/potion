@@ -27,8 +27,8 @@ The API exposes a “potions inventory” loosely based on Diablo II’s potions
 
 ## Usage
 + Every potion has a potion name, which is a string. It must be between 4 and 64 characters long, and globally unique. Also, potion names can only contain alphanumeric ascii characters, underscores, and dashes, and cannot start with an underscore or dash. \
-+ Every potion has a potion type, which is a string and must be either `active` or `passive`. \
-+ Every potion has a potion class, which is a string and depends on its potion type. For potions of type `passive`, the potion type can be `life` or `mana`. For potions of type `active`, it can be `fire` or `poison`. \
++ Every potion has a potion type, which is a string and must be either `active` or `passive`.
++ Every potion has a potion class, which is a string and depends on its potion type. For potions of type `passive`, the potion type can be `life` or `mana`. For potions of type `active`, it can be `fire` or `poison`.
 + A potion cannot be deleted. Also its name, type, and class cannot be modified.
 
   + Retrieve the whole list of potions: \
