@@ -31,7 +31,7 @@ pyflakes==1.6.0
 Pygments==2.2.0
 python-dateutil==2.6.0
 python-mimeparse==1.6.0
-PyYAML==3.12
+PyYAML==5.4
 redis==2.10.5
 requests==2.18.4
 scandir==1.6
